@@ -1,0 +1,141 @@
+<!DOCTYPE html>{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="forum.css">
+    <style>
+        .discussion-box{
+            width:35%;
+            border:1px solid #ccc;
+            margin: 30px 20px;
+            padding:10px, 20px;
+            font-family:'poppins', sans-serif;
+            border-radius: 5px;
+            margin-left: 30%;
+            margin-top: 80px;
+            box-shadow: 0px 0px  10px 1px rgb(165, 165, 165);
+
+        }
+        .discussion-box p{
+            text-align: center;
+            font-size: 40px;
+            color: #777;
+        }
+
+        .discussion-form input, .discussion-form textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 2px;
+            box-sizing: border-box;
+            outline: none;
+            font-size: 16px;
+            font-family: 'poppins', sans-serif;
+            border: 2.7px solid #ddd;
+            color: black;
+        }
+
+        .discussion-form button{
+            margin: 10px 0;
+            border: none;
+            background-color: aqua;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 4px;
+            color: #444;
+        }
+        button:hover{
+            color: white;
+            background-color: #444;
+        }
+        @media(max-width: 900px){
+            .discussion-box{
+                width: 30%;
+                margin: 1%;
+            }
+        }
+
+    </style>
+
+    <title>Quizza</title>
+  </head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Qwizza</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Welcome</a></li>
+                    <li><a href="#">To</a></li>
+                    <li><a href="#">Qwizza</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+
+        <div class="wrapper">
+            <nav>
+              <input type="checkbox" id="show-search">
+              <input type="checkbox" id="show-menu">
+              <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+              <div class="content">
+              <div class="logo">
+                <ul class="links">
+                  <li><div style = "position: relative; bottom:20px"><a href="#">Generate Question Paper</a></div></li>
+               
+                 <li>
+                    <a href="#" class="desktop-link"><div style = "position: relative; bottom:20px">Subjects</div></a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Subjects</label>
+                    <ul>
+                      <li><a href="#">Drop Menu 1</a></li>
+                      <li><a href="#">Drop Menu 2</a></li>
+                      <li><a href="#">Drop Menu 3</a></li>
+                      <li><a href="#">Drop Menu 4</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                   
+                  <li><a href="#"><div style = "position: relative; bottom:20px">Discussion forum</div></a></li>
+                  </li>
+                </ul>
+            
+            
+              </div>
+              </div>
+              
+              
+            </nav>
+            </div>
+
+            <div class="discussion-box">
+                <p>  Leave a post</p>
+                <form class="discussion-form">
+                    <input type="text" placeholder="User Name">
+                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Question/Topic">
+                    <textarea rows="8" placeholder="Answer Box"></textarea>
+                    <button type="submit">Post Query</button>
+    
+                </form>
+            </div>
+    
+
+
+<div class="footer">
+<p>Contact Us: Instagram  | Facebook  |  Discord | For bussiness enquiries, contact: abcd@gmail.com​</p>
+</div>
+    </div>
+
+</body>
+
+</html>

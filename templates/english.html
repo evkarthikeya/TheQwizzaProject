@@ -1,0 +1,243 @@
+<!DOCTYPE html>{% load static %}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ceb9cd;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(10,25,55);
+}
+.topnav input[type=text]{
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;  
+  border-radius: 25px; 
+  
+}
+
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.footer {
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    background-color: rgba(10,25,55);
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+  .Sub {
+  float: left;
+  overflow: hidden;
+ }
+  .dropbtn {
+  background-color:  rgba(10,25,55);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  float:center;
+  position: absolute;
+  background-color: rgba(10,25,55);;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.Sub:hover {background-color:  rgba(10,25,55);}
+
+
+.Sub:hover .dropdown-content {display: block;
+float: center;
+border-radius: 25;}
+.dropdown-content a:hover{background-color: white;
+color:#ceb9cd;}
+.Questions{
+    margin-left:20px;
+    color:rgba(10,25,55);}
+.load a{
+    background-color:rgba(10,25,55);
+    color:white ;
+    float:right;
+    margin-right:50px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius:25px
+}
+
+    .upload{
+  float: right;
+  overflow: hidden;
+}
+  .dropbutn {
+  background-color:  rgba(10,25,55);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius:25px
+}
+
+
+
+.down-content {
+  display: none;
+  float:center;
+  position: absolute;
+  background-color: rgba(10,25,55);;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.down-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius:25px;
+  font-size: 10px;;
+}
+
+.upload:hover {background-color:  rgba(10,25,55);}
+
+
+.upload:hover .down-content {display: block;
+float: center;
+border-radius: 25;}
+.down-content a:hover{background-color: white;
+color:#ceb9cd;}
+
+.chapters {
+    display: grid;
+    grid-template-columns: 9fr 9fr 9fr 9fr 9fr ;
+    grid-gap: 20px;
+    font-size: 14px;
+    margin-left:50px;
+    margin-top:50px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bolder;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <input type="text" placeholder="Search..">
+  <div class="Sub">
+  <button class="dropbtn">Subjects</button>
+  <div class="dropdown-content">
+    <a href="https://www.google.co.in/">English</a>
+   <br> <a href="#">Mathematics</a>
+   <br> <a href="#">Physical Science</a>
+   <br><a href="#">Biological Science</a>
+   <br><a href="#">Social Studies</a></div>
+ 
+</div>
+
+  
+</div>
+<div class="chapters">
+<div class = "q"><br>
+  FIRST FLIGHT <br>
+1. A Letter to God<br>
+2. Nelson Mandela<br>
+3. Two Stories About Flying<br>
+4. From the Diary of Anne Frank<br>
+5. The Hundred Dresses 1<br>
+6. The Hundred Dresses 2<br><br>
+
+POEMS <br>
+1. Dust of Snow<br>
+2. Fire and Ice<br>
+3. A Tiger in the Zoo<br>
+4. The Ball Poem<br>
+</div>
+<div class = "r">
+  <br>WRITING SKILL<br>
+1. Formal letter based on a given situation.<br>
+ Letter to the Editor<br>
+ Letter of Complaint (Official)<br>
+ Letter of Complaint (Business)<br><br><br>
+
+
+General Grammar based on <br>
+1. Tenses<br>
+2. Modals<br>
+3. Subject-Verb Agreement<br>
+4. Determiners<br>
+5. Reported Speech (Commands and Requests; Statements; Questions)
+</div>
+</div>
+
+
+   <div class="load">
+    <a href="#">Your questions</a></div>
+    <div class="upload">
+        <button class="dropbutn">Upload question</button>
+        <div class="down-content">
+          <a href="https://www.google.co.in/">Multiple choice</a>
+         <a href="#">True or False</a>
+          <a href="#">Essay type</a>
+        <a href="#">Fill in the blank</a>
+       </div>
+
+
+<div class="chapters"></div>
+<div class="footer">
+  <p>Contact Us: Instagram  | Facebook  |  Discord | For bussiness enquiries, contact: abcd@gmail.com​</p>
+</div>
+  
+
+
+</body>
+</html>
